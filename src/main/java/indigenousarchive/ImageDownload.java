@@ -30,8 +30,9 @@ import java.util.stream.Stream;
  * @since 2024-1-20
  */
 public class ImageDownload {
-    String filetype = "";
-    String filename = "";
+    private String filetype = "";
+    private String filename = "";
+    private char[] saltchars = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     /**
      * Barebones constructor. Just instantiates the object
@@ -125,7 +126,7 @@ public class ImageDownload {
     }
 
 
-    char[] saltchars = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    
     /**
      * get a random salt. will just make a salt for you to append to your filename.
      * @param givestr A initial salt for the salt to add to. usually just ""
