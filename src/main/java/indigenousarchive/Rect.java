@@ -9,7 +9,7 @@ import processing.core.PApplet;
 	 * @version 1.0
 */
 public class Rect {
-    public PApplet app;
+    private PApplet app;
     private int x;
     private int y;
     private int width;
